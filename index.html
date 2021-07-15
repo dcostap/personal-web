@@ -79,7 +79,7 @@
             transform: scale(1.1);
         }
 
-        .timeline-item .item[data-v-5c5ef65f] {
+        .timeline-item .item[data-v-timelime-item] {
             border-left: 5px solid #ccd5db;
             padding: 20px 0 20px 15px;
             position: relative
@@ -91,26 +91,26 @@
             position: relative
         }
 
-        .timeline-item .date-item[data-v-5c5ef65f] {
+        .timeline-item .date-item[data-v-timelime-item] {
             margin: 0;
             text-transform: uppercase;
             font-size: 16px;
             letter-spacing: 2px
         }
 
-        .timeline-item .title-item[data-v-5c5ef65f] {
+        .timeline-item .title-item[data-v-timelime-item] {
             margin: 0;
             padding: 5px 0;
             font-size: 20px;
             font-weight: 500
         }
 
-        .timeline-item .description-item[data-v-5c5ef65f] {
+        .timeline-item .description-item[data-v-timelime-item] {
             font-weight: 100;
             margin: 0
         }
 
-        .timeline-item .dot[data-v-5c5ef65f] {
+        .timeline-item .dot[data-v-timelime-item] {
             display: block;
             position: absolute;
             width: 15px;
@@ -120,23 +120,23 @@
             top: 26px
         }
 
-        .timeline[data-v-30ba92e0] {
+        .timeline[data-timelime-item] {
             text-align: left;
             width: 100%;
             max-width: 700px
         }
 
-        .timeline .wrapper-timeline[data-v-30ba92e0] {
+        .timeline .wrapper-timeline[data-timelime-item] {
             position: relative
         }
 
-        .timeline .wrapper-item[data-v-30ba92e0] {
+        .timeline .wrapper-item[data-timelime-item] {
             display: grid;
             grid-template-columns: 100px 1fr;
             margin-bottom: 20px
         }
 
-        .timeline .wrapper-item .section-year[data-v-30ba92e0] {
+        .timeline .wrapper-item .section-year[data-timelime-item] {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -155,41 +155,41 @@
             font-size: 18px
         }
 
-        .timeline .wrapper-item .section-year .year[data-v-30ba92e0] {
+        .timeline .wrapper-item .section-year .year[data-timelime-item] {
             margin: 0
         }
 
-        .timeline .wrapper-item.unique-timeline[data-v-30ba92e0] {
+        .timeline .wrapper-item.unique-timeline[data-timelime-item] {
             margin-bottom: 0
         }
 
-        .timeline-item .item[data-v-5c5ef65f] {
+        .timeline-item .item[data-v-timelime-item] {
             border-left: 5px solid #ccd5db;
             padding: 20px 0 20px 15px;
             position: relative
         }
 
-        .timeline-item .date-item[data-v-5c5ef65f] {
+        .timeline-item .date-item[data-v-timelime-item] {
             margin: 0;
             text-transform: uppercase;
             font-size: 16px;
             letter-spacing: 2px
         }
 
-        .timeline-item .title-item[data-v-5c5ef65f] {
+        .timeline-item .title-item[data-v-timelime-item] {
             margin: 0;
             padding: 5px 0;
             font-size: 20px;
             font-weight: 500
         }
 
-        .timeline-item .description-item[data-v-5c5ef65f] {
+        .timeline-item .description-item[data-v-timelime-item] {
             font-weight: 100;
             margin: 0;
             font-size: 17px;
         }
 
-        .timeline-item .dot[data-v-5c5ef65f] {
+        .timeline-item .dot[data-v-timelime-item] {
             display: block;
             position: absolute;
             width: 15px;
@@ -199,23 +199,23 @@
             top: 26px
         }
 
-        .timeline[data-v-30ba92e0] {
+        .timeline[data-timelime-item] {
             text-align: left;
             width: 100%;
             max-width: 570px
         }
 
-        .timeline .wrapper-timeline[data-v-30ba92e0] {
+        .timeline .wrapper-timeline[data-timelime-item] {
             position: relative
         }
 
-        .timeline .wrapper-item[data-v-30ba92e0] {
+        .timeline .wrapper-item[data-timelime-item] {
             display: grid;
             grid-template-columns: 100px 1fr;
             margin-bottom: 20px
         }
 
-        .timeline .wrapper-item .section-year[data-v-30ba92e0] {
+        .timeline .wrapper-item .section-year[data-timelime-item] {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -234,11 +234,11 @@
             font-size: 18px
         }
 
-        .timeline .wrapper-item .section-year .year[data-v-30ba92e0] {
+        .timeline .wrapper-item .section-year .year[data-timelime-item] {
             margin: 0
         }
 
-        .timeline .wrapper-item.unique-timeline[data-v-30ba92e0] {
+        .timeline .wrapper-item.unique-timeline[data-timelime-item] {
             margin-bottom: 0
         }
 
@@ -250,10 +250,9 @@
 
 <body>
     <div class="">
-        <div class="h-screen flex flex-col justify-center items-center px-4 sm:text-xl">
-            <p><span class="sm:text-4xl pad">👋 Hi, I'm </span><span
-                    class="rainbow inline-block text-4xl sm:text-6xl">Darío
-                    Costa</span></p>
+        <div class="h-screen flex flex-col justify-center items-center px-4">
+            <p><span class="sm:text-4xl pad">👋 Hi, I'm </span>
+                <span class="rainbow inline-block text-4xl sm:text-6xl">Darío Costa</span></p>
             <br />
             <br />
             <p class="sm:text-3xl"><em>I love coding</em></p>
@@ -277,108 +276,134 @@
             <p class="sm:text-3xl"><em>I write about random stuff in my <a class="rainbow animated-hover"
                         href="https://dcostap.github.io/personal-blog/">blog</a></em></p>
 
-            <div class="text-3xl mt-24">
-                <a class="rainbow animated-hover mx-10">> My projects</a>
-                <a href="#section-trajectory" class="rainbow animated-hover">> My trajectory</a>
-            </div>
+            <!-- <div class="flex flex-col items-center justify-center text-3xl mt-28">
+                <p>
+                    <span><a class="rainbow animated-hover mx-10">> My projects</a></span>
+                    <span><a href="#section-trajectory" class="rainbow animated-hover">> My trajectory</a></span>
+                </p>
+            </div> -->
+
+            <p class="mt-32 text-center">
+                <!-- <span class="text-3xl p-3">
+                    <a class="rainbow animated-hover">> My projects</a>
+                </span> -->
+                <span class="rainbow inline-block text-3xl p-3">
+                    <a href="#section-trajectory" class="rainbow animated-hover">> My trajectory</a>
+                </span>
+            </p>
 
         </div>
 
+        <!-- <div id="section-projects" class="flex items-center justify-center h-screen mx-auto px-4">
+            <div class="flex flex-wrap -mx-3 overflow-hidden">
+                <div class="my-3 px-3 overflow-hidden w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2">
+                  <div class="p-5 box-content max-w-sm h-full w-full mx-auto bg-white bg-opacity-20 rounded-xl shadow-md justify-center text-center content-center">
+                    <img src="assets/chesslearn.png" />
+                    <h1 class="text-3xl">Chesslearn</h1>
+                  </div>
+                </div>
+
+              </div>
+        </div> -->
+
         <div id="section-trajectory" class="flex flex-col justify-center items-center px-4 sm:text-xl">
             <p class="rainbow inline-block text-4xl sm:text-5xl p-8">My trajectory</p>
-            <div data-v-30ba92e0="" class="timeline w-full md:w-1/2">
-                <div data-v-30ba92e0="" class="wrapper-timeline">
-                    <div data-v-30ba92e0="" class="wrapper-item unique-timeline">
-                        <div data-v-30ba92e0="" class="section-year">
-                            <p data-v-30ba92e0="" class="year"> 2021 </p>
+            <div data-timelime-item="" class="timeline w-full md:w-1/2">
+                <div data-timelime-item="" class="wrapper-timeline">
+                    <div data-timelime-item="" class="wrapper-item unique-timeline">
+                        <div data-timelime-item="" class="section-year">
+                            <p data-timelime-item="" class="year"> 2021 </p>
                         </div>
-                        <section data-v-5c5ef65f="" data-v-30ba92e0="" class="timeline-item">
-                            <div data-v-5c5ef65f="" class="item"><span data-v-5c5ef65f="" class="dot"
+                        <section data-v-timelime-item="" data-timelime-item="" class="timeline-item">
+                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"
                                     style="background: rgb(255, 255, 255);"></span>
-                                <h3 data-v-5c5ef65f="" class="date-item">July</h3>
-                                <h3 data-v-5c5ef65f="" class="title-item">System Manager at <a
+                                <h3 data-v-timelime-item="" class="date-item">July</h3>
+                                <h3 data-v-timelime-item="" class="title-item">System Manager at <a
                                         href="https://www.castrosua.com/" class="animated-hover">Castrosua</a>
 
                                     <i class="fas fa-database"></i>
                                 </h3>
-                                <p data-v-5c5ef65f="" class="description-item">Performing IT duties. Developing Sage ERP
+                                <p data-v-timelime-item="" class="description-item">Performing IT duties. Developing
+                                    Sage ERP
                                     tools and automating processes in Python.</p>
                             </div>
                         </section>
                     </div>
-                    <div data-v-30ba92e0="" class="wrapper-item unique-timeline">
-                        <div data-v-30ba92e0="" class="section-year">
-                            <p data-v-30ba92e0="" class="year"> 2021 </p>
+                    <div data-timelime-item="" class="wrapper-item unique-timeline">
+                        <div data-timelime-item="" class="section-year">
+                            <p data-timelime-item="" class="year"> 2021 </p>
                         </div>
-                        <section data-v-5c5ef65f="" data-v-30ba92e0="" class="timeline-item">
-                            <div data-v-5c5ef65f="" class="item"><span data-v-5c5ef65f="" class="dot"
+                        <section data-v-timelime-item="" data-timelime-item="" class="timeline-item">
+                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"
                                     style="background: rgb(255, 255, 255);"></span>
-                                <h3 data-v-5c5ef65f="" class="date-item">June</h3>
-                                <h3 data-v-5c5ef65f="" class="title-item">Computer Science Degree
+                                <h3 data-v-timelime-item="" class="date-item">June</h3>
+                                <h3 data-v-timelime-item="" class="title-item">Computer Science Degree
                                     <i class="fas fa-graduation-cap"></i>
                                 </h3>
-                                <p data-v-5c5ef65f="" class="description-item">Multiplatform Development
+                                <p data-v-timelime-item="" class="description-item">Multiplatform Development
                                     Degree.<br /><em>CS Desarrollo de Aplicaciones Multiplataforma.</em></p>
                             </div>
                         </section>
                     </div>
-                    <div data-v-30ba92e0="" class="wrapper-item unique-timeline">
-                        <div data-v-30ba92e0="" class="section-year">
-                            <p data-v-30ba92e0="" class="year"> 2019 </p>
+                    <div data-timelime-item="" class="wrapper-item unique-timeline">
+                        <div data-timelime-item="" class="section-year">
+                            <p data-timelime-item="" class="year"> 2019 </p>
                         </div>
-                        <section data-v-5c5ef65f="" data-v-30ba92e0="" class="timeline-item">
-                            <div data-v-5c5ef65f="" class="item"><span data-v-5c5ef65f="" class="dot"
+                        <section data-v-timelime-item="" data-timelime-item="" class="timeline-item">
+                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"
                                     style="background: rgb(255, 255, 255);"></span>
-                                <h3 data-v-5c5ef65f="" class="date-item">May</h3>
-                                <h3 data-v-5c5ef65f="" class="title-item">IT at <a href="https://www.calvo.es/"
+                                <h3 data-v-timelime-item="" class="date-item">May</h3>
+                                <h3 data-v-timelime-item="" class="title-item">IT internship at <a href="https://www.calvo.es/"
                                         class="animated-hover">Calvo</a>
                                     <i class="fas fa-laptop"></i>
                                 </h3>
-                                <p data-v-5c5ef65f="" class="description-item">Managing and configuring the company's
+                                <p data-v-timelime-item="" class="description-item">Managing and configuring the
+                                    company's
                                     hardware resources.
                                 </p>
                             </div>
                         </section>
                     </div>
-                    <div data-v-30ba92e0="" class="wrapper-item unique-timeline">
-                        <div data-v-30ba92e0="" class="section-year">
-                            <p data-v-30ba92e0="" class="year"> 2018 </p>
+                    <div data-timelime-item="" class="wrapper-item unique-timeline">
+                        <div data-timelime-item="" class="section-year">
+                            <p data-timelime-item="" class="year"> 2018 </p>
                         </div>
-                        <section data-v-5c5ef65f="" data-v-30ba92e0="" class="timeline-item">
-                            <div data-v-5c5ef65f="" class="item"><span data-v-5c5ef65f="" class="dot"
+                        <section data-v-timelime-item="" data-timelime-item="" class="timeline-item">
+                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"
                                     style="background: rgb(255, 255, 255);"></span>
-                                <h3 data-v-5c5ef65f="" class="date-item">June</h3>
-                                <h3 data-v-5c5ef65f="" class="title-item">IT Degree
+                                <h3 data-v-timelime-item="" class="date-item">June</h3>
+                                <h3 data-v-timelime-item="" class="title-item">IT Degree
                                     <i class="fas fa-graduation-cap"></i>
                                 </h3>
-                                <p data-v-5c5ef65f="" class="description-item">Network Administration
+                                <p data-v-timelime-item="" class="description-item">Network Administration
                                     Degree.<br /><em>CS Administrador de Sistemas y Dispositivos en Red.</em></p>
                             </div>
                         </section>
                     </div>
 
-                    <div data-v-30ba92e0="" class="wrapper-item unique-timeline">
-                        <div data-v-30ba92e0="" class="section-year">
+                    <div data-timelime-item="" class="wrapper-item unique-timeline">
+                        <div data-timelime-item="" class="section-year">
                         </div>
-                        <section data-v-5c5ef65f="" data-v-30ba92e0="" class="timeline-item">
-                            <div data-v-5c5ef65f="" class="item_dashed_line"><span data-v-5c5ef65f=""
+                        <section data-v-timelime-item="" data-timelime-item="" class="timeline-item">
+                            <div data-v-timelime-item="" class="item_dashed_line"><span data-v-timelime-item=""
                                     style="background: rgb(255, 255, 255);"></span>
                                 <div class="h-8"></div>
                             </div>
                         </section>
                     </div>
 
-                    <div data-v-30ba92e0="" class="wrapper-item unique-timeline">
-                        <div data-v-30ba92e0="" class="section-year">
-                            <p data-v-30ba92e0="" class="year"> 2007 </p>
+                    <div data-timelime-item="" class="wrapper-item unique-timeline">
+                        <div data-timelime-item="" class="section-year">
+                            <p data-timelime-item="" class="year"> 2007 </p>
                         </div>
-                        <section data-v-5c5ef65f="" data-v-30ba92e0="" class="timeline-item">
-                            <div data-v-5c5ef65f="" class="item"><span data-v-5c5ef65f="" class="dot"
+                        <section data-v-timelime-item="" data-timelime-item="" class="timeline-item">
+                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"
                                     style="background: rgb(255, 255, 255);"></span>
-                                <h3 data-v-5c5ef65f="" class="title-item">Wrote my first line of code
+                                <h3 data-v-timelime-item="" class="title-item">Wrote my first line of code
                                     <i class="fas fa-code"></i>
                                 </h3>
-                                <p data-v-5c5ef65f="" class="description-item">I learned to program as a child while I
+                                <p data-v-timelime-item="" class="description-item">I learned to program as a child
+                                    while I
                                     toyed around making my own videogames.</em></p>
                             </div>
                         </section>
@@ -386,6 +411,12 @@
                 </div>
             </div>
 
+        </div>
+
+        <div class="bg-black bg-opacity-40 h-14 mt-14 p-4">
+            Website designed & coded by me.
+            <a href="https://github.com/dcostap/personal-web" class="rainbow animated-hover">Source Code <i
+                    class="rainbow fab fa-github"></i> </a>
         </div>
     </div>
 </body>
