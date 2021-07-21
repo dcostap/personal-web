@@ -14,238 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
 
-    <style data-styled="" data-styled-version="5.2.1">
-        /*!sc*/
-        .rainbow {
-            text-align: center;
-            position: relative;
-            color: #a5e091;
-            background: linear-gradient(0deg, #91e0d5 20%, #7db3fa 80%);
-            background: -webkit-linear-gradient(0deg, #91e0d5 20%, #7db3fa 80%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        i .rainbow {
-            background: linear-gradient(0deg, #91e0d5 20%, #7db3fa 80%);
-            background: -webkit-linear-gradient(0deg, #91e0d5 20%, #7db3fa 80%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /*!sc*/
-        body {
-            border: none;
-            border-radius: 20px;
-            font-family: 'Jost', sans-serif;
-            color: rgb(187, 187, 187);
-            background-color: #303030;
-        }
-
-        .animated-hover {
-            box-shadow: 0 10px 0 0 rgb(182 233 248 / 0%), inset 0 -0.125em rgb(182 233 248 / 20%);
-        }
-
-        .animated-hover {
-            border-radius: 2px;
-            color: currentColor;
-            padding: 0 2px 2px;
-            position: relative;
-            transition-duration: .2s;
-            transition-property: box-shadow, color;
-        }
-
-        .animated-hover:hover {
-            color: #c7c7c7;
-            box-shadow: 0 1px 0 4px rgb(182 233 248 / 10%), inset 0 -2em 0 rgb(182 233 248 / 10%);
-            font-weight: bold;
-        }
-
-        a {
-            transition-duration: .2s;
-        }
-
-        i {
-            transition-duration: .1s;
-        }
-
-        a:hover {
-            color: var(--link-hover);
-            filter: brightness(1.3) saturate(1.2);
-        }
-
-        a i:hover {
-            transform: scale(1.1);
-        }
-
-        .timeline-item .item[data-v-timelime-item] {
-            border-left: 5px solid #ccd5db;
-            padding: 20px 0 20px 15px;
-            position: relative
-        }
-
-        .timeline-item .item_dashed_line {
-            border-left: 5px dashed #ccd5db;
-            padding: 20px 0 20px 15px;
-            position: relative
-        }
-
-        .timeline-item .date-item[data-v-timelime-item] {
-            margin: 0;
-            text-transform: uppercase;
-            font-size: 16px;
-            letter-spacing: 2px
-        }
-
-        .timeline-item .title-item[data-v-timelime-item] {
-            margin: 0;
-            padding: 5px 0;
-            font-size: 20px;
-            font-weight: 500
-        }
-
-        .timeline-item .description-item[data-v-timelime-item] {
-            font-weight: 100;
-            margin: 0
-        }
-
-        .timeline-item .dot[data-v-timelime-item] {
-            display: block;
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            left: -10px;
-            top: 26px
-        }
-
-        .timeline[data-timelime-item] {
-            text-align: left;
-            width: 100%;
-            max-width: 700px
-        }
-
-        .timeline .wrapper-timeline[data-timelime-item] {
-            position: relative
-        }
-
-        .timeline .wrapper-item[data-timelime-item] {
-            display: grid;
-            grid-template-columns: 100px 1fr;
-            margin-bottom: 20px
-        }
-
-        .timeline .wrapper-item .section-year[data-timelime-item] {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
-            -webkit-box-align: end;
-            -ms-flex-align: end;
-            align-items: flex-end;
-            padding: 15px;
-            font-weight: 700;
-            font-size: 18px
-        }
-
-        .timeline .wrapper-item .section-year .year[data-timelime-item] {
-            margin: 0
-        }
-
-        .timeline .wrapper-item.unique-timeline[data-timelime-item] {
-            margin-bottom: 0
-        }
-
-        .timeline-item .item[data-v-timelime-item] {
-            border-left: 5px solid #ccd5db;
-            padding: 20px 0 20px 15px;
-            position: relative
-        }
-
-        .timeline-item .date-item[data-v-timelime-item] {
-            margin: 0;
-            text-transform: uppercase;
-            font-size: 16px;
-            letter-spacing: 2px
-        }
-
-        .timeline-item .title-item[data-v-timelime-item] {
-            margin: 0;
-            padding: 5px 0;
-            font-size: 20px;
-            font-weight: 500
-        }
-
-        .timeline-item .description-item[data-v-timelime-item] {
-            font-weight: 100;
-            margin: 0;
-            font-size: 17px;
-        }
-
-        .timeline-item .dot[data-v-timelime-item] {
-            display: block;
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            left: -10px;
-            top: 26px
-        }
-
-        .timeline[data-timelime-item] {
-            text-align: left;
-            width: 100%;
-            max-width: 570px
-        }
-
-        .timeline .wrapper-timeline[data-timelime-item] {
-            position: relative
-        }
-
-        .timeline .wrapper-item[data-timelime-item] {
-            display: grid;
-            grid-template-columns: 100px 1fr;
-            margin-bottom: 20px
-        }
-
-        .timeline .wrapper-item .section-year[data-timelime-item] {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
-            -webkit-box-align: end;
-            -ms-flex-align: end;
-            align-items: flex-end;
-            padding: 15px;
-            font-weight: 700;
-            font-size: 18px
-        }
-
-        .timeline .wrapper-item .section-year .year[data-timelime-item] {
-            margin: 0
-        }
-
-        .timeline .wrapper-item.unique-timeline[data-timelime-item] {
-            margin-bottom: 0
-        }
-
-        * {
-            scroll-behavior: smooth !important;
-        }
-    </style>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -285,27 +59,64 @@
             </div> -->
 
             <p class="mt-32 text-center">
-                <!-- <span class="text-3xl p-3">
+                <span class="text-3xl p-3">
                     <a href="#my-projects" class="rainbow animated-hover">> My projects</a>
-                </span> -->
-                <span class="rainbow inline-block text-3xl p-3">
+                </span>
+                <br />
+                <span class="rainbow inline-block text-3xl p-3 mt-5">
                     <a href="#my-trajectory" class="rainbow animated-hover">> My trajectory</a>
                 </span>
             </p>
 
         </div>
 
-        <!-- <div id="my-projects" class="flex items-center justify-center h-screen mx-auto px-4">
-            <div class="flex flex-wrap -mx-3 overflow-hidden">
-                <div class="my-3 px-3 overflow-hidden w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2">
-                  <div class="p-5 box-content max-w-sm h-full w-full mx-auto bg-white bg-opacity-20 rounded-xl shadow-md justify-center text-center content-center">
-                    <img src="assets/chesslearn.png" />
-                    <h1 class="text-3xl">Chesslearn</h1>
-                  </div>
+        <div id="my-projects"
+            class="flex flex-col justify-center text-center items-center px-4 sm:text-xl min-h-screen">
+            <p class="rainbow inline-block text-4xl sm:text-5xl p-8">Some of my projects</p>
+            <div class="grid md:grid-cols-2 grid-cols-1">
+                <div>
+                    <a href="https://gitlab.com/dcostap/fp-dam-proyecto-fin-ciclo"
+                        class="rainbow animated-hover text-2xl">>
+                        Chess web with Android app</a>
+                    <div class="mt-4">
+                        <p class="text-3xl">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3"></i>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-python"></i>
+                            <i class="fab fa-java"></i>
+                            <span class="iconify" data-icon="simple-icons:kotlin" style="display: inline;"></span>
+                        </p>
+
+                        <p>Just a <em>proof of concept</em> for a website focused on <br />teaching chess beyond the
+                            basics: openings
+                            & tactics.</p>
+                        <br />
+                        <p>Front-end coded with JavaScript
+
+                            <i class="fab fa-js"></i>
+                            and styled using <a href="https://bulma.io/">Bulma</a>.
+                        </p>
+                        <p>Back-end web server coded in Python
+                            <i class="fab fa-python"></i>
+                            with Flask.
+                        </p>
+
+                        <p>Android app coded in Java
+                            <i class="fab fa-java"></i>
+                            and Kotlin
+                            <span class="iconify" data-icon="simple-icons:kotlin" style="display: inline;"></span>
+                        </p>
+                    </div>
                 </div>
 
-              </div>
-        </div> -->
+                <div class="h-96">
+                    <img src="assets/chesslearn-app.png" class="max-h-full in-left"
+                        style="display: block; margin: 0 auto; opacity: 0;" />
+                </div>
+
+            </div>
+        </div>
 
         <div id="my-trajectory" class="flex flex-col justify-center items-center px-4 sm:text-xl">
             <p class="rainbow inline-block text-4xl sm:text-5xl p-8">My trajectory</p>
