@@ -47,7 +47,7 @@
         }
 
         a {
-            transition-duration: .2s;
+            transition-duration: .1s;
         }
 
         i {
@@ -281,4 +281,10 @@
             -webkit-animation-delay: 0s;
             -moz-animation-delay: 0s;
             animation-delay: 0s;
+        }
+
+        hr {
+            border: 0;
+            height: 3px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(172, 172, 172, 0.356), rgba(0, 0, 0, 0));
         }
