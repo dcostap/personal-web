@@ -1,4 +1,4 @@
-## This is a very simple personal website I coded. Enjoy.
+## This is a very simple [personal website](https://dariocosta.dev/) I coded. Enjoy.
 
 I used...
 - **Tailwind CSS** for the responsive design.
