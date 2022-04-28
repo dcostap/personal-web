@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html x-data="{ light: true }" @dom-changed.self="light=$el.getAttribute('data-theme')=='light'">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset=" utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta charset="utf-8" />
     <title>Darío Costa | Developer</title>
@@ -10,6 +10,7 @@
     <meta name="next-head-count" content="4" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/41daea0a28.js" crossorigin="anonymous"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +19,26 @@
 
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </head>
 
 <body>
     <div class="">
+        <div class="p-6 flex justify-end">
+            <a style="cursor: pointer;" onclick="themeSwitcher()">
+                <svg x-show="light" style="width: 2rem; margin-left: auto; margin-right: 0;" fill="none"
+                     stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="5"
+                          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+                <svg x-show="!light" style="width: 2rem; margin-left: auto; margin-right: 0;" fill="none"
+                     stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+            </a>
+        </div>
         <div class="min-h-screen flex flex-col justify-center items-center px-4 p-10">
             <p class="p-10"><span class="text-2xl sm:text-4xl pad">👋 Hi, I'm </span>
                 <span class="rainbow inline-block text-5xl sm:text-6xl">Darío Costa</span>
@@ -33,23 +48,23 @@
             <p class="text-2xl sm:text-3xl text-center"><em>I love coding</em></p>
             <p class="max-w-md my-2">
                 <a href="https://github.com/dcostap" target="_blank" class="mr-4"><i
-                        class="rainbow fab fa-2x fa-github"></i></a>
+                       class="rainbow fab fa-2x fa-github"></i></a>
                 <a href="https://gitlab.com/dcostap" target="_blank" class="mr-4"><i
-                        class="rainbow fab fa-2x fa-gitlab"></i></a>
+                       class="rainbow fab fa-2x fa-gitlab"></i></a>
             </p>
 
             <br />
             <p class="text-2xl sm:text-3xl text-center"><em>I also dabble in game development</em></p>
             <p class="max-w-md my-2">
                 <a href="https://darencius.itch.io/" target="_blank" class="mr-4"><i
-                        class="rainbow fab fa-2x fa-itch-io"></i></a>
+                       class="rainbow fab fa-2x fa-itch-io"></i></a>
                 <a href="https://twitter.com/darencius3" target="_blank" class="mr-4"><i
-                        class="rainbow fab fa-2x fa-twitter"></i></a>
+                       class="rainbow fab fa-2x fa-twitter"></i></a>
             </p>
             <br />
 
-            <p class="text-2xl sm:text-3xl text-center"><em>I write about random stuff in my <a class="rainbow animated-hover"
-                        href="https://blog.dariocosta.dev">blog</a></em></p>
+            <p class="text-2xl sm:text-3xl text-center"><em>I write about random stuff in my <a
+                       class="rainbow animated-hover" href="https://blog.dariocosta.dev">blog</a></em></p>
 
             <!-- <div class="flex flex-col items-center justify-center text-3xl mt-28">
                 <p>
@@ -73,12 +88,12 @@
 
         <hr class="solid">
         <div id="my-projects"
-            class="flex flex-col justify-center text-center items-center px-4 sm:text-xl min-h-screen p-10">
+             class="flex flex-col justify-center text-center items-center px-4 sm:text-xl min-h-screen p-10">
             <p class="rainbow inline-block text-4xl sm:text-5xl p-8">Some of my projects</p>
             <div class="grid md:grid-cols-2 grid-cols-1">
                 <div class="2xl:max-w-xl">
                     <a href="https://gitlab.com/dcostap/fp-dam-proyecto-fin-ciclo"
-                        class="rainbow animated-hover text-2xl">>
+                       class="rainbow animated-hover text-2xl">>
                         Chess web with Android app</a>
                     <div class="mt-4">
                         <p class="text-3xl">
@@ -90,7 +105,9 @@
                             <span class="iconify" data-icon="simple-icons:kotlin" style="display: inline;"></span>
                         </p>
 
-                        <p>Just a <em>proof of concept</em> for a <a href="https://dcostap-chess.herokuapp.com/index.html" class="animated-hover">website</a> focused on teaching chess beyond the
+                        <p>Just a <em>proof of concept</em> for a <a
+                               href="https://dcostap-chess.herokuapp.com/index.html" class="animated-hover">website</a>
+                            focused on teaching chess beyond the
                             basics: openings & tactics.</p>
                         <br />
                         <p>Front-end coded with JavaScript
@@ -113,7 +130,7 @@
 
                 <div class="h-96">
                     <img src="assets/chesslearn-app.png" class="max-h-full in-left"
-                        style="display: block; margin: 0 auto; opacity: 0;" />
+                         style="display: block; margin: 0 auto; opacity: 0;" />
                 </div>
 
             </div>
@@ -129,20 +146,22 @@
                             <p data-timelime-item="" class="year"> 2021 </p>
                         </div>
                         <section data-v-timelime-item="" data-timelime-item="" class="timeline-item">
-                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"
-                                    style="background: rgb(255, 255, 255);"></span>
+                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"></span>
                                 <h3 data-v-timelime-item="" class="date-item">Since July</h3>
                                 <h3 data-v-timelime-item="" class="title-item">Software Developer & IT technician at <a
-                                        href="https://www.linkedin.com/company/grupocastrosua/"
-                                        class="animated-hover">Castrosua <i class="fas fa-bus"></i></a>
+                                       href="https://www.linkedin.com/company/grupocastrosua/"
+                                       class="animated-hover">Castrosua <i class="fas fa-bus"></i></a>
                                 </h3>
-                                <div data-v-timelime-item="" class="description-item pl-10 grid grid-cols-10 flex-grow-0">
+                                <div data-v-timelime-item=""
+                                     class="description-item pl-10 grid grid-cols-10 flex-grow-0">
 
                                     <div><i class="fas fa-database"></i></div>
-                                    <div class="col-span-9"> Modernizing and digitalizing the factory's bus-building process.</div>
+                                    <div class="col-span-9"> Modernizing and digitalizing the factory's bus-building
+                                        process.</div>
 
                                     <div><i class="fas fa-chart-line"></i></div>
-                                    <div class="col-span-9"> Aggregating sales, stock and manufacturing data into Power BI reports</div>
+                                    <div class="col-span-9"> Aggregating sales, stock and manufacturing data into Power
+                                        BI reports</div>
 
                                     <div><i class="fas fa-code"></i></div>
                                     <div class="col-span-9"> Developing internal websites and ERP tools.</div>
@@ -161,8 +180,7 @@
                             <p data-timelime-item="" class="year"> 2021 </p>
                         </div>
                         <section data-v-timelime-item="" data-timelime-item="" class="timeline-item">
-                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"
-                                    style="background: rgb(255, 255, 255);"></span>
+                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"></span>
                                 <h3 data-v-timelime-item="" class="date-item">June</h3>
                                 <h3 data-v-timelime-item="" class="title-item">Computer Science Degree
                                     <i class="fas fa-graduation-cap"></i>
@@ -177,14 +195,15 @@
                             <p data-timelime-item="" class="year"> 2019 </p>
                         </div>
                         <section data-v-timelime-item="" data-timelime-item="" class="timeline-item">
-                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"
-                                    style="background: rgb(255, 255, 255);"></span>
+                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"></span>
                                 <h3 data-v-timelime-item="" class="date-item">May</h3>
                                 <h3 data-v-timelime-item="" class="title-item">IT internship at <a
-                                        href="https://www.linkedin.com/company/calvo/" class="animated-hover">Calvo <i class="fas fa-fish"></i></a>
+                                       href="https://www.linkedin.com/company/calvo/" class="animated-hover">Calvo <i
+                                           class="fas fa-fish"></i></a>
                                 </h3>
                                 <p data-v-timelime-item="" class="description-item pl-10">
-                                    <i class="fas fa-laptop"></i> Managing and configuring the company's hardware resources.
+                                    <i class="fas fa-laptop"></i> Managing and configuring the company's hardware
+                                    resources.
                                 </p>
                             </div>
                         </section>
@@ -194,8 +213,7 @@
                             <p data-timelime-item="" class="year"> 2018 </p>
                         </div>
                         <section data-v-timelime-item="" data-timelime-item="" class="timeline-item">
-                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"
-                                    style="background: rgb(255, 255, 255);"></span>
+                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"></span>
                                 <h3 data-v-timelime-item="" class="date-item">June</h3>
                                 <h3 data-v-timelime-item="" class="title-item">IT Degree
                                     <i class="fas fa-graduation-cap"></i>
@@ -210,8 +228,7 @@
                         <div data-timelime-item="" class="section-year">
                         </div>
                         <section data-v-timelime-item="" data-timelime-item="" class="timeline-item">
-                            <div data-v-timelime-item="" class="item_dashed_line"><span data-v-timelime-item=""
-                                    style="background: rgb(255, 255, 255);"></span>
+                            <div data-v-timelime-item="" class="item_dashed_line"><span data-v-timelime-item=""></span>
                                 <div class="h-8"></div>
                             </div>
                         </section>
@@ -222,8 +239,7 @@
                             <p data-timelime-item="" class="year"> 2006 </p>
                         </div>
                         <section data-v-timelime-item="" data-timelime-item="" class="timeline-item">
-                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"
-                                    style="background: rgb(255, 255, 255);"></span>
+                            <div data-v-timelime-item="" class="item"><span data-v-timelime-item="" class="dot"></span>
                                 <h3 data-v-timelime-item="" class="title-item">Wrote my first line of code
                                     <i class="fas fa-code"></i>
                                 </h3>
@@ -240,10 +256,10 @@
 
 
         <div class="">
-            <div class="mt-14 p-4 bg-black bg-opacity-40">
+            <div class="mt-14 p-4 footer">
                 Website designed & coded by me.
                 <a href="https://github.com/dcostap/personal-web" class="rainbow animated-hover">Source Code <i
-                        class="rainbow fab fa-github"></i> </a>
+                       class="rainbow fab fa-github"></i> </a>
             </div>
         </div>
     </div>
