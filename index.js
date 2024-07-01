@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 function updateTheme() {
     // check for the OS theme setting
-    let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: light)");
+    let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)");
 
     // setting that overrides OS theme, so user can change it
     let theme = sessionStorage.getItem('theme');

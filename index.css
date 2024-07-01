@@ -21,19 +21,19 @@
 }
 
 html[data-theme="light"] {
-    --gradient-base: #87be77;
-    --gradient-start: #67c0b1;
-    --gradient-end: #79a6e0;
+    --gradient-base: #2b3cb7;
+    --gradient-start: #2b3cb7;
+    --gradient-end: #005cab;
     --text-color: rgb(27, 27, 27);
     --back-color: #f3f3f3;
     --hover-color: #141414;
     --hover-anim-1: rgb(182 233 248 / 0%);
     --hover-anim-2: rgba(138, 185, 228, 0.2);
     --hover-anim-3: rgba(154, 187, 224, 0.308);
-    --timeline-border: #c8dff0;
+    --timeline-border: #67b8ff;
     --separator-1: rgba(0, 0, 0, 0);
     --separator-2: rgba(172, 172, 172, 0.356);
-    --timeline-dot: rgba(100, 170, 216, 0.836);
+    --timeline-dot: #2b3cb7;
     --footer: rgba(255, 255, 255, 0.781);
 
     text-shadow: 0 2px 4px rgba(118, 164, 175, 0.24);
